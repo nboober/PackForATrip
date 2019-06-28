@@ -5,8 +5,6 @@ public class Shoes {
     private String color = "";
     private String material = "";
     private String type = "";
-//    ArrayList<Object> shoes;
-//    private Shoes cowboyBoots;
 
     public Shoes(){
 
@@ -16,13 +14,7 @@ public class Shoes {
         this.color = color;
         this.material = material;
         this.type = type;
-//        shoes = new ArrayList<Object>();
-//        setShoes();
     }
-
-//    public void setShoes(){
-//        shoes.add(cowboyBoots = new Shoes("brown", "snake skin", "cowboy"));
-//    }
 
     public String getColor() {
         return color;
