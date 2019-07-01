@@ -53,7 +53,7 @@ public class Shirt {
 
     @Override
     public String toString(){
-        if(this.buttons = false){
+        if(!this.buttons){
             return "\nA " + this.color + ", " + this.material + ", " + this.sleeveType + " sleeve shirt.";
 
         }else{

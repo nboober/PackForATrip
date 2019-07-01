@@ -42,7 +42,7 @@ public class Jacket {
 
     @Override
     public String toString(){
-        if(this.hood = false){
+        if(!this.hood){
             return "A " + this.color + ", " + this.material + " jacket.";
         }else{
             return "A " + this.color + ", " + this.material + " hoodie.";
