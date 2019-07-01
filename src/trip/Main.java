@@ -5,28 +5,26 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Closet casual = new Closet();
-        Closet dressy = new Closet();
-        Closet cowboy = new Closet();
+        Closet closet = new Closet();
 
-        String closet;
+        String trip;
 
         do {
             System.out.println("\nYou have a 'casual' closet filled with casual clothes, a 'dressy' closet and a 'cowboy' closet. \nWhich closet would you like to open? When you are done, type 'finished'.");
-            closet = scanner.next();
+            trip = scanner.next();
 
-            if (closet.equalsIgnoreCase("casual")) {
-                System.out.println(casual.getCasualCloset());
-            } else if (closet.equalsIgnoreCase("dressy")) {
-                System.out.println(dressy.getDressyCloset());
-            } else if (closet.equalsIgnoreCase("cowboy")) {
-                System.out.println(cowboy.getCowboyCloset());
-            }else if(closet.equalsIgnoreCase("finished")){
+            if (trip.equalsIgnoreCase("casual")) {
+                System.out.println(closet.getCasualCloset());
+            } else if (trip.equalsIgnoreCase("dressy")) {
+                System.out.println(closet.getDressyCloset());
+            } else if (trip.equalsIgnoreCase("cowboy")) {
+                System.out.println(closet.getCowboyCloset());
+            }else if(trip.equalsIgnoreCase("finished")){
                 continue;
             }else{
                 System.out.println("That is not an option.");
             }
 
-        } while(!closet.equalsIgnoreCase("finished"));
+        } while(!trip.equalsIgnoreCase("finished"));
     }
 }
